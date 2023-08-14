@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+</head>
+<body>
+    <nav id="desktop_nav">
+        <div class="logo">Rishu Raj</div>
+        <div>
+            <ul class="nav_links">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <nav id="hamburger_nav">
+        <div class="logo">Rishu Raj</div>
+        <div class="hamburger_menu">
+        <div class="hamburger_icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu_links">
+        <li><a href="#About" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+        </div>
+    </nav>
+    <section id="profile">
+    <div class="section_pic_container">
+<img src="./assets/Profile_pic1.png" alt="Rishu Raj profile pic" class="circular_image">
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Rishu Raj</h1>
+        <p class="section_text_p2">Software Developer</p>
+        <div class="btn_container">
+            <button class="btn btn_color_1" onclick="window.open('./assets/RISHU_Resume.pdf')">Download CV</button>
+            <button class="btn btn_color_2" onclick="location.href='./#Contact'">Contact Info</button>
+        </div>
+        <div class="socials_container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rishu-raj-21834ba6/'">
+            <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/rishuraj2335/'">
+        </div>
+    </div>
+</section>
+   <script src="script.js"></script>
+</body>
+</html>
