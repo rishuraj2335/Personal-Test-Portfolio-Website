@@ -37,6 +37,7 @@
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
+      justify-content: center;
     }
     .about_containers {
       margin-top: 0;
